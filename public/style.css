@@ -1,0 +1,99 @@
+header{
+  width:2000px;
+  /* height:150px; */
+  background-color:blue;
+  color:white;
+  padding: 80px 0 70px 50px;
+  font-size: 24px;
+}
+main{
+  height: 90vh;
+  width: 1000px;
+}
+footer{
+  text-align: center;
+  height: 100px;
+  border-top: solid 5px black;
+  background-color: gray;
+  padding-top: 24px;
+}
+
+.container{
+  padding: 80px 0 0 50px;
+}
+
+.thead{
+  text-align: left;
+}
+/* .login td{
+  padding: 3px 3px;
+} */
+table td{
+  padding: 3px 3px;
+}
+tr td input{
+  height: 24px;
+  font-size: 16px;
+/* //  border: 1px black solid; */
+}
+input[type="submit"]{
+  color:black;
+  font-size: 16px;
+  border: 1px black solid;
+}
+td a{
+  color:black;
+  text-decoration:none;
+}
+#loginbtn{
+  margin: 16px 0 0 140px;
+}
+#hinto{
+  padding: 100px 20px;
+}
+th{
+  background-color:#999;
+  color:#fff;
+  padding:5px 10px;
+}
+td{
+  border: solid 1px #aaa;
+  color:#999;
+  padding:5px 10px;
+}
+input[type="button"]{
+  border:none;
+  font-size: 16px;
+}
+button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+        font-size: 16px;
+}
+
+.contentdo{
+  width:300px;
+}
+.contentdate{
+  width:150px;
+}
+
+table{
+  margin: 0 32px;
+  margin-top: 24px;
+}
+
+.paging{
+  margin: auto 48px;
+}
+
+.insert a{
+  margin:16px 0;
+  padding: 5px 10px;
+  border: 2px double black;
+  width:70px;
+}
