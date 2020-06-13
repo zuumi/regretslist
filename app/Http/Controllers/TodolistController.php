@@ -58,7 +58,8 @@ class TodolistController extends Controller
       $count = Todolist::count();
       $page = $count / 8 - 1;
       $limit = $count % 8;
-      return view('home',['lists'=>self::dbcall()]);
+      return redirect('home');
+      // view('home',['lists'=>self::dbcall()]);
   }
 
   public function edit(Request $request)
@@ -77,7 +78,8 @@ class TodolistController extends Controller
       'date'=>$request->date
     ];
     self::dbfindById($id)->update($param);
-    return view('home',['lists'=>self::dbcall()]);
+    return redirect('home');
+    // view('home',['lists'=>self::dbcall()]);
   }
 
   public function del(Request $request)
@@ -91,7 +93,8 @@ class TodolistController extends Controller
   {
     $id = $request->id;//hiddenから送られてきたカラムを取得，
     self::dbfindById($id)->delete();
-    return view('home',['lists'=>self::dbcall()]);
+    return redirect('home');
+    // view('home',['lists'=>self::dbcall()]);
   }
 
   public function show(Request $request)
